@@ -10,6 +10,7 @@ font-family: 'Roboto', sans-serif;
 }
 
 
+
 .content {
 	position: relative;
 	display: -ms-grid;
@@ -62,10 +63,18 @@ iframe{
     bottom: 0;
     height: 100%;
     width: 100%;
-    overflow-x: visible;
-    overflow: scroll; 
-    -webkit-overflow-scrolling: touch;
 }
+    .scroll_wrapper {
+        z-index: 2;
+        width: 100vw;
+        position: fixed;
+        height: 1000px; 
+        -webkit-overflow-scrolling: touch;
+        overflow-y: scroll;
+
+    }
+
+
 
 #port_frame {
     -webkit-transform: translatey(100%);
@@ -78,9 +87,6 @@ iframe{
     opacity: 0;
     margin-top: 60px;
 height: 90vh;
-        overflow-y: hidden;
-            overflow-x: visible;
-
 
 }
 #port_frame.active {
@@ -91,9 +97,6 @@ height: 90vh;
     -o-transition: 1s;
     transition: 1s;
     opacity: 1;
-        overflow-y: hidden;
-            overflow-x: visible;
-
 }
 #abt_frame {
     -webkit-transform: translatey(100%);
@@ -1027,20 +1030,22 @@ width: 50%;
 
 }
 #abt {
-    -webkit-transform: translatex(0);
-        -ms-transform: translatex(0);
-            transform: translatex(0);
+    -webkit-transform: translatex(69vw);
+        -ms-transform: translatex(69vw);
+            transform: translatex(69vw);
     -webkit-transition: 1s;
     -o-transition: 1s;
     transition: 1s;
+    width: 30vw;
+
 }
 #abt.hidden {
 -webkit-transition: 1s;
 -o-transition: 1s;
 transition: 1s;
--webkit-transform: translateX(10%);
-    -ms-transform: translateX(10%);
-        transform: translateX(10%);
+-webkit-transform: translateX(100vw);
+    -ms-transform: translateX(100vw);
+        transform: translateX(100vw);
 }
 #home.move {
     -webkit-transform: translateX(700%);
@@ -1099,9 +1104,9 @@ width: 50vw;
   content : "";
   position: absolute;
   top: 3vw;
-    left: 93%;
+    left: 92%;
   height: 1px;
-  width: 4%;
+  width: 7%;
   border-bottom:3px solid;
     }
 
