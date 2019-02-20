@@ -485,6 +485,8 @@ ul.nav_drop > li.active {
     .frame {
         height: 50vw;
         width: 50vw;
+        margin: 0 auto;
+margin-top: 25vh;
     }
     .frame_inside {
         width: 50vw;
@@ -498,6 +500,8 @@ ul.nav_drop > li.active {
     .frame {
         height: 50vw;
         width: 50vw;
+        margin: 0 auto;
+margin-top: 25vh;
     }
     .frame_inside {
         width: 50vw;
@@ -645,6 +649,8 @@ ul.nav_drop > li
     .frame {
         height: 40vw;
         width: 40vw;
+        margin: 0 auto;
+margin-top: 25vh;
     }    
 
     .frame_inside {
@@ -807,6 +813,8 @@ width: 50%;
 .frame {
         height: 30vw;
         width: 30vw;
+    margin: 0 auto;
+margin-top: 25vh;
     }    
 
 .frame_inside {
@@ -1152,6 +1160,8 @@ display: none;
 .frame {
         height: 30vw;
         width: 30vw;
+    margin: 0 auto;
+margin-top: auto;
     }    
 
 .frame_inside {
