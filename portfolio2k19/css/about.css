@@ -1,0 +1,153 @@
+body {
+    background-color: none;
+    overflow: hidden;
+    margin: 0;
+font-family: 'Roboto', sans-serif;
+    color: #6fc8b2;
+
+}
+.pic {
+    display: none;
+}
+.hed {
+    border-right: solid;
+    border-bottom: solid;
+    border-width: 3vw;
+    border-color: #6fc8b2;
+    margin: 80px 8vw 8vw 8vw;
+    padding-top: 40px;
+}
+
+#hed {
+    text-align: right;
+    margin: 9px;            
+}
+h1  {
+    font-weight: 400;
+    line-height: 6vw;
+    font-size: 9vw;
+
+}
+h2 {
+    font-weight: 300;
+    font-size: 6vw;
+    line-height: 0;
+    letter-spacing: .4vw;
+}
+.outside {
+    float: right;
+    margin: 0 0 0 8vw;  
+    background: #ffffffb3;
+
+}
+#bdy {
+    margin: 2vw 8vw 2vw 4vw;
+    font-size: 5vw;
+    text-align: right;
+}
+
+.icon {
+    position: absolute;
+    bottom: 0;
+    right:0;
+    margin: 0 8vw 5vw 0 ;
+
+
+}
+.icon img {
+    width: 8vw;
+    border-radius: 9vw;
+}
+#email {
+    display: none;
+}
+
+.mail{
+    display: none;
+}
+
+/* Phone */
+@media only screen and (max-width: 600px) {    
+
+
+} 
+
+/* iPad Pro/laptops*/
+@media only screen and (min-width: 600px) {
+
+.pic {
+display:inherit;
+height: 20vw;
+width: 20vw;
+background-color: aliceblue;
+margin: 2vw 2vw 1vw 2vw;
+    }
+.pic img {
+display:inherit;
+height: 20vw;
+width: 20vw;
+background-color: aliceblue;
+    }
+.hed {
+display:none;}
+
+#hed {
+display:none;}
+h1  {
+display: none;}
+h2 {
+display: none;}
+    
+.outside {
+    float: right;
+    margin: 0 2vw 0 23.3vw;  
+    background: #ffffffb3;
+
+}
+#bdy {
+    margin:2vw;
+    font-weight: 100;
+    font-size: 2.5vw;
+    text-align: left;
+}
+.icon {
+
+    position: absolute;
+    margin: 0;
+    left: 2vw;
+    top: 24vw;
+
+    }
+ 
+.mail p{
+    display: inherit;
+    margin: 0 0 0 .5vw;
+    font-size: 1.7vw;
+    letter-spacing: .1vw;
+    font-weight: 300;
+    color: dimgrey;
+    }
+
+#mail img {
+    }
+#linked {
+width: 3.5vw;
+height: 3.5vw;
+border-radius: 9vw;
+}
+.mail {
+    display: flex;
+}
+#email {
+    display: inherit;
+    margin: .15vw 0 0 0 ;
+    width: 3.5vw;
+    height: 3.5vw;
+}
+
+} 
+
+/*large laptops and desktops*/
+@media only screen and (min-width: 1200px) {
+
+}

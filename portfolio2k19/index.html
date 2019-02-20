@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>    <title>Aric Knowles, Designer</title>
+
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Aric Knowles is a web and graphic designer in the NYC area.">
+    <meta name="keywords" content="Aric Knowles, Web Designer, Graphic Design, NYC">
+    <meta name="author" content="Aric Knowles">
+
+        <link rel="shortcut icon" href="favicon.ico">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montserrat|Open+Sans|Questrial|Roboto" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this website in a modern browser that supports CSS Variables.");</script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+	</head>
+	<body>
+
+		<main>
+            <iframe id="port_frame" data-src="page2.html" src="about:blank"></iframe>
+            <iframe id="abt_frame" data-src="about.html" src="about:blank"></iframe>
+
+            <div class="nav">
+
+                <div id="nav-ham">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+            </div>
+            </div>
+
+<div class="nav_menu">
+        <ul class="nav_drop"> 
+            <li id="abt">About</li>
+            <li id="home">Home</li>
+            <li id="port">Portfolio</li>
+
+        </ul> 
+</div>
+            
+			<div class="content">                
+
+				<canvas class="scene scene--full" id="scene">
+                </canvas>
+                    <div class="frame">
+                    <div class="frame_inside">
+                        <h1>Aric Knowles</h1>
+                    <div> 
+                    <h6>Graphic Designer</h6><h6>Web Designer</h6>
+                        </div></div>  
+
+                    </div><div class="frame_outside"><p>aricknowles@gmail.com</p></div>
+
+			</div>
+
+		</main>
+		<script src="js/three.min.js"></script>
+		<script src="js/perlin.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/style.js"></script>
+		<script src="js/style.js"></script>
+        
+<script>
+ $(document).ready(function(){
+	$('#nav-icon1,#nav-ham,#nav-icon3,#nav-icon4').click(function(){
+		$(this).toggleClass('open');
+        $('ul.nav_drop > li').toggleClass('active');
+
+	});
+     
+});
+
+$(document).ready(function(){
+    
+$("#home").click(function(){
+    $('#abt_frame.active, #port_frame.active').removeClass('active');
+    $('#nav-icon1,#nav-ham,#nav-icon3,#nav-icon4').removeClass('open');
+    $('ul.nav_drop > li').removeClass('active');
+    $('.frame_outside, .frame').removeClass('up right');
+if (window.matchMedia("(max-width: 1200px)").matches) {
+   $('#home').addClass('test');
+    $('#home').delay(1000).hide(0);
+    $('#port, #abt').removeClass('test');
+    $("#port, #abt").show(0);
+     $('#home.move').removeClass("move");
+} else { 
+    $('#home').toggleClass('move');
+    $("#port, #abt").removeClass('hidden');
+
+}
+
+	});
+
+});
+
+$("#port").click(function(){
+    var iframe = $("#port_frame");
+    iframe.attr("src", iframe.data("src")); 
+    $('#abt_frame.active').removeClass('active');
+    $('#port_frame').toggleClass('active');
+    $('.frame_outside, .frame').toggleClass('right');
+    $('.frame_outside, .frame').removeClass('up');
+    $('#nav-icon1,#nav-ham,#nav-icon3,#nav-icon4').removeClass('open');
+    $('ul.nav_drop > li').removeClass('active');
+if (window.matchMedia("(max-width: 1200px)").matches) {
+   $('#port').addClass('test');
+    $('#port').delay(1000).hide(0);
+    $('#home, #abt').removeClass('test');
+    $("#home, #abt").show(0);
+    $('#home').addClass('move');
+
+} else { 
+    $('#port').toggleClass('hidden');
+    $("#abt").removeClass('hidden');
+    $('#home').addClass('move');
+}
+
+});
+
+$("#abt").click(function(){
+    var iframe = $("#abt_frame");
+    iframe.attr("src", iframe.data("src")); 
+    $('#port_frame.active').removeClass('active');
+    $('#abt_frame').toggleClass('active');
+    $('.frame_outside, .frame').toggleClass('up');
+    $('.frame_outside, .frame').removeClass('right');
+    $('#nav-icon1,#nav-ham,#nav-icon3,#nav-icon4').removeClass('open');
+    $('ul.nav_drop > li').removeClass('active');
+if (window.matchMedia("(max-width: 1200px)").matches) {
+   $('#abt').addClass('test');
+    $('#abt').delay(1000).hide(0);
+    $('#home, #port').removeClass('test');
+
+    $("#home, #port").show(0);
+    $('#home').addClass('move');
+
+} else { 
+    $('#abt').toggleClass('hidden');
+   $("#port").removeClass('hidden');
+        $('#home').addClass('move');
+
+} 
+});
+
+
+</script>
+
+	</body>
+</html>
