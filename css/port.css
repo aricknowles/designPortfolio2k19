@@ -13,6 +13,8 @@ z-index: -1;
 }
 
 .slides {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 	width:90vw;
     margin: auto;
@@ -31,8 +33,11 @@ margin: auto;
     margin-top:9px;
     margin-bottom:16px;
 	width:85vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;    
-    justify-content: space-around;
+    -ms-flex-pack: distribute;    
+        justify-content: space-around;
 
 }
 
@@ -43,11 +48,15 @@ margin: auto;
 #nav_im >img {
     width:100%;
     opacity:0.60;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
 
 }
 #nav_im >img:hover {
 	opacity: 1;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
 
 }
@@ -61,6 +70,8 @@ margin: auto;
 
     margin:0 auto;
     width: 90vw;
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;    
 }
 
@@ -83,10 +94,14 @@ display: flex;
 a{
 color: grey; 
 text-decoration: none;
+-webkit-transition: .3s;
+-o-transition: .3s;
 transition: .3s;
 z-index: 9900;
 }
 a:hover {
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
     opacity: .6;
 }
@@ -114,6 +129,15 @@ a:hover {
 }
 }
 */
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -124,27 +148,59 @@ a:hover {
   }
 }
 
-@keyframes fadeInUp {
+@-webkit-keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
   }
 
   100% {
     opacity: 1;
-    transform: none;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
   }
 }
 
 @keyframes fadeInRight {
   0% {
     opacity: 0;
-    transform: translate3d(100%, 0, 0);
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
   }
 
   100% {
     opacity: 1;
-    transform: none;
+    -webkit-transform: none;
+            transform: none;
   }
 }
 
@@ -152,40 +208,34 @@ a:hover {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+     transition-timing-function: ease-in-out;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both; }
-/* line 17, /Users/miguelperez/Sites/csstricks/source/stylesheets/pageTransitions.css.scss */
+
 .m-scene .scene_element--fadein {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn; }
-/* line 22, /Users/miguelperez/Sites/csstricks/source/stylesheets/pageTransitions.css.scss */
 .m-scene .scene_element--fadeinup {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp; }
-/* line 27, /Users/miguelperez/Sites/csstricks/source/stylesheets/pageTransitions.css.scss */
 .m-scene .scene_element--fadeinright {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight; }
-/* line 32, /Users/miguelperez/Sites/csstricks/source/stylesheets/pageTransitions.css.scss */
 .m-scene .scene_element--delayed {
   -webkit-animation-delay: 0.25s;
   animation-delay: 0.25s; }
-/* line 37, /Users/miguelperez/Sites/csstricks/source/stylesheets/pageTransitions.css.scss */
 .m-scene.is-exiting .scene_element {
   -webkit-animation-direction: alternate-reverse;
   animation-direction: alternate-reverse; }
-/* line 42, /Users/miguelperez/Sites/csstricks/source/stylesheets/pageTransitions.css.scss */
 .m-scene.is-exiting .scene_element--delayed {
   -webkit-animation-delay: 0s;
   animation-delay: 0s; }
-/* line 47, /Users/miguelperez/Sites/csstricks/source/stylesheets/pageTransitions.css.scss */
 .m-scene.is-exiting .scene_element--noexiting {
   -webkit-animation-direction: alternate-reverse;
   animation-direction: alternate-reverse; }
 
 @media screen and (min-width: 768px) {
-  /* line 58, /Users/miguelperez/Sites/csstricks/source/stylesheets/pageTransitions.css.scss */
   .m-scene .scene_element--fadeinright-wide {
     -webkit-animation-name: fadeInRight;
     animation-name: fadeInRight; } }

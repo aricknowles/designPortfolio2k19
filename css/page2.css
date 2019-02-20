@@ -1,6 +1,7 @@
 .flex-grid *
 {
-  box-sizing: border-box;  
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;  
 
 }
 a {
@@ -27,6 +28,8 @@ width: 100%;}
 /* Portfolio */
 
 .flex-grid__container {
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
     overflow: hidden;    
   text-align: center;
@@ -34,8 +37,11 @@ display: flex;
   position: relative;
   background-clip: padding-box;*/
   -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+          -webkit-transform: translate3d(0, 0, 0);
+                  transform: translate3d(0, 0, 0);
   transition: -webkit-transform 1s ease;
+  -webkit-transition: -webkit-transform 1s ease;
+  -o-transition: transform 1s ease;
   transition: transform 1s ease;
   transition: transform 1s ease, -webkit-transform 1s ease;
 }
@@ -48,6 +54,8 @@ display: flex;
   width: 100%;
   background-clip: padding-box;*/
   opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
 .flex-grid__container:hover {
@@ -55,6 +63,8 @@ display: flex;
   -webkit-transform: translate3d(0, -8px, 0);
           transform: translate3d(0, -8px, 0);
   transition: -webkit-transform 1s ease;
+  -webkit-transition: -webkit-transform 1s ease;
+  -o-transition: transform 1s ease;
   transition: transform 1s ease;
   transition: transform 1s ease, -webkit-transform 1s ease;
 }
@@ -66,15 +76,22 @@ display: flex;
 /* Components */
 
 .flex-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-flow: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
   margin-left: -16px;
   margin-right: -16px;
 }
 .flex-grid > * {
   padding: 16px;
-  flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   max-width: 100%;
 }
 
@@ -131,7 +148,8 @@ display: flex;
 /* Phone */
 @media only screen and (min-width: 600px) {
   .flex-grid > * {
-    flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
     max-width: 50%;
   }
     .flex-grid > *:nth-child(2n + 1) {
@@ -146,4 +164,3 @@ display: flex;
     height: 23vw;
     }
 } 
-
