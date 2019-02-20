@@ -37,7 +37,7 @@ h2 {
 .outside {
     float: right;
     margin: 0 0 0 8vw;  
-    background: #ffffffb3;
+    background: rgba(255, 255, 255, 0.75);
 
 }
 #bdy {
@@ -101,7 +101,7 @@ display: none;}
 .outside {
     float: right;
     margin: 0 2vw 0 23.3vw;  
-    background: #ffffffb3;
+    background: rgba(255, 255, 255, 0.75);
 
 }
 #bdy {
