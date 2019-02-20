@@ -351,7 +351,7 @@ ul.nav_drop > li.active {
     margin: 9px;
     mix-blend-mode: exclusion;
     z-index: 11;
-    position: absolute;
+    position: fixed;
 }
 
 #nav-ham{
