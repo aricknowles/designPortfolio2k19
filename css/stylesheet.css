@@ -55,8 +55,9 @@ iframe{
     bottom: 0;
     height: 100%;
     width: 100%;
-                overflow-x: visible;
-
+    overflow-x: visible;
+    overflow: scroll; 
+    -webkit-overflow-scrolling: touch;
 }
 
 #port_frame {
@@ -262,6 +263,10 @@ ul.nav_drop > li.active {
 
 
 /*hamburger*/
+.safari {
+    mix-blend-mode: normal;
+    color: #83c1b1;
+}
 .nav {
     top: 0;
     right: 0;

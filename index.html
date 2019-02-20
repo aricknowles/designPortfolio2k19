@@ -181,5 +181,13 @@ if (window.matchMedia("(max-width: 1200px)").matches) {
 
 </script>
 
+<script type="text/javascript"> 
+if (navigator.userAgent.indexOf('Chrome') != -1 && 
+    navigator.userAgent.indexOf('Safari') == -1) {
+        document.body.className += " safari";
+    }
+</script>
+
+
 	</body>
 </html>
