@@ -26,7 +26,8 @@ position: relative
     position: fixed;
 
 top: 0;
-z-index: 9000;}
+z-index: 9000;
+margin: 0 0 0 3%  }
 
 .nav {
 margin: auto;
