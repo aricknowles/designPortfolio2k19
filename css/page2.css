@@ -1,3 +1,6 @@
+body {
+    overflow-x: hidden;
+}
 .flex-grid *
 {
   -webkit-box-sizing: border-box;

@@ -148,6 +148,7 @@ height: 90vh;
     -o-transition: 1s;
     transition: 1s;
     opacity: 1;
+
 }
 #abt_frame {
     -webkit-transform: translatey(100%);
