@@ -122,8 +122,10 @@ iframe{
         position: fixed;
         -webkit-overflow-scrolling: touch;
         overflow-y: scroll;
-        height: 90vh;
-    }
+        overflow: visible;
+        height: 80vh;
+
+   }
 
 
 
@@ -136,7 +138,6 @@ iframe{
     transition: 1s;
     opacity: 0;
     margin-top: 60px;
-height: 90vh;
 
 }
 #port_frame.active {
@@ -1339,8 +1340,7 @@ width: 50%;
         transform: translateX(95%) translateY(0%);
     }
     .scroll_wrapper {
-        top:0;
-        height: 100vh;
+        height: 92vh;
     }
 
 
