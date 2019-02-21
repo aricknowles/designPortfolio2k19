@@ -116,14 +116,13 @@ iframe{
 }
     .scroll_wrapper {
         z-index: 2;
-        top: 0;
         bottom: 0;
         right: 0;
         left: 0;
         position: fixed;
         -webkit-overflow-scrolling: touch;
         overflow-y: scroll;
-
+        height: 90vh;
     }
 
 
@@ -141,9 +140,9 @@ height: 90vh;
 
 }
 #port_frame.active {
-    -webkit-transform: translateY(5%);
-        -ms-transform: translateY(5%);
-            transform: translateY(5%);
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
     -webkit-transition: 1s;
     -o-transition: 1s;
     transition: 1s;
@@ -1339,6 +1338,12 @@ width: 50%;
 
         transform: translateX(95%) translateY(0%);
     }
+    .scroll_wrapper {
+        top:0;
+        height: 100vh;
+    }
+
+
 }
     
 /*safari*/
