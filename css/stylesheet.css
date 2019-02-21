@@ -141,9 +141,9 @@ height: 90vh;
 
 }
 #port_frame.active {
-    -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateY(5%);
+        -ms-transform: translateY(5%);
+            transform: translateY(5%);
     -webkit-transition: 1s;
     -o-transition: 1s;
     transition: 1s;
