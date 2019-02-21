@@ -169,13 +169,12 @@ display: flex;
 .flex-grid__container {
     height: 23vw;
     }
-} 
-@media only screen and (min-width: 1200px) {
-    .vids {
+        .vids {
         display: inherit;
     }
     .images{
     display: none;
 }
 
-}
+} 
+

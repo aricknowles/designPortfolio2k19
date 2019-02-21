@@ -346,10 +346,7 @@ ul.nav_drop > li.active {
 
 
 /*hamburger*/
-.safari {
-    mix-blend-mode: normal;
-    color: black;
-}
+
 .nav {
     top: 0;
     right: 0;
@@ -506,7 +503,7 @@ margin-top: 25vh;
      width: 50%;
     }   
     .nav_drop {
-             width: 50%;
+             width: 100%;
 
     }
 } 
@@ -1292,5 +1289,26 @@ width: 50%;
         transform: translateX(95%) translateY(0%);
     }
 }
+    
+/*safari*/
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) and (min-width: 900px) { 
+    @media {
+        .nav_menu { 
+        mix-blend-mode: normal;
+        }
+        .nav_menu ul, .nav_menu li {
+            color: #83c1b1;
+        }
+    }
+}
+@media not all and (min-resolution:.001dpcm) and (min-width: 900px) { 
+    @media {
+        .nav_menu { 
+        mix-blend-mode: normal;
+        }
+                .nav_menu ul, .nav_menu li {
+            color: #83c1b1;
+        }
 
-
+    }
+}
